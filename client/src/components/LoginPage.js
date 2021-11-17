@@ -3,7 +3,7 @@ import { useState } from "react";
 import LoginForm from './LoginForm'
 import SignUpForm from './SignUpForm'
 
-function LoginPage ({setUser}) {
+function LoginPage({ setUser }) {
     const [showLogin, setShowLogin] = useState(true);
 
    return(

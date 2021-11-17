@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 //import { Button, Error, input, div, label } from "../styles";
 
-function LoginForm({ setUser }) {
+function LoginForm({ setUser = () => console.log('') }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
-  function handleSubmit(e) {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setIsLoading(true);
     fetch("/login", {
@@ -19,7 +19,7 @@ function LoginForm({ setUser }) {
     }).then((r) => {
       setIsLoading(false);
       if (r.ok) {
-        r.json().then((user) => setUser(user));
+        r.json().then((user) => setUser(user) && console.log(user));
       } else {
         r.json().then((err) => setErrors(err.errors));
       }
@@ -27,7 +27,7 @@ function LoginForm({ setUser }) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={(e) => handleSubmit(e)}>
       <div>
         <label htmlFor="username">Username</label>
         <input

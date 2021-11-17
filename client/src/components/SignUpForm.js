@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 // import { Button, Error, input, div, label, Textarea } from "../styles";
 
-function SignUpForm({ setUser }) {
+function SignUpForm({ setUser = () => console.log('') }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [passwordConfirmation, setPasswordConfirmation] = useState("");
@@ -11,7 +11,7 @@ function SignUpForm({ setUser }) {
   const [errors, setErrors] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
-  function handleSubmit(e) {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setErrors([]);
     setIsLoading(true);
@@ -31,7 +31,7 @@ function SignUpForm({ setUser }) {
     }).then((r) => {
       setIsLoading(false);
       if (r.ok) {
-        r.json().then((user) => setUser(user));
+        r.json().then((user) => setUser(user) && console.log(user));
       } else {
         r.json().then((err) => setErrors(err.errors));
       }
@@ -39,7 +39,7 @@ function SignUpForm({ setUser }) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={(e) => handleSubmit(e)}>
         <div>
           
           <label htmlFor="name">Name</label>
