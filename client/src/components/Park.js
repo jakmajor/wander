@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Trail from './Trail.js';
 
-function Park({ park }) {
+function Park({ park, user }) {
     const [showParks, setShowParks] = useState(false);
 
 
@@ -17,7 +17,7 @@ function Park({ park }) {
                 <p>{park.state}</p>
             </button>
             { showParks && park.trails.map((trail) => 
-                <Trail trail={trail} />
+                <Trail trail={trail} user={user} />
             )}
         </div>
     )

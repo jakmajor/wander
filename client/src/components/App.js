@@ -10,6 +10,7 @@ function App() {
   const [user, setUser] = useState(null);
   const [parks, setParks] = useState([]); 
   
+  
   const FETCH_URL = '/parks'
 
   useEffect(() => {
@@ -34,8 +35,6 @@ function App() {
   const parksPlease = (parks) => {
     if (!!parks) {setParks(parks)}
   }
-  
-
 
   if (!user) return <LoginPage setUser={setUser}/>;
 
@@ -43,7 +42,6 @@ function App() {
     <div className="App">
       <Navbar user={user} setUser={setUser} />
       <Routes>
-        <Route exact path="/LogIn" element={<LoginPage setUser={setUser}/>}/>
         <Route exact path="/Profile" element={<Profile user={user}/>}/>
         <Route exact path="/" element={<ParksContainer user={user} parks={parks}/>}/>
       </Routes>
@@ -52,3 +50,5 @@ function App() {
 }
 
 export default App;
+
+{/* <Route exact path="/LogIn" element={<LoginPage setUser={setUser}/>}/> */}
