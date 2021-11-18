@@ -4,9 +4,13 @@ import Navbar from "./Navbar";
 import LoginPage from './LoginPage.js';
 import Profile from './Profile.js';
 import Park from './Park.js'
+import ParksContainer from "./ParksContainer";
 
 function App() {
   const [user, setUser] = useState(null);
+  const [parks, setParks] = useState([]); 
+  
+  const FETCH_URL = '/parks'
 
   useEffect(() => {
     // auto-login
@@ -17,6 +21,22 @@ function App() {
     });
   }, []);
 
+  const getParks = () => {
+    fetch(FETCH_URL) 
+    .then(r => r.json())
+    .then((json) => parksPlease(json))
+  }
+
+  useEffect(() => {
+    getParks()
+  }, []);
+
+  const parksPlease = (parks) => {
+    if (!!parks) {setParks(parks)}
+  }
+  
+
+
   if (!user) return <LoginPage setUser={setUser}/>;
 
   return (
@@ -25,7 +45,7 @@ function App() {
       <Routes>
         <Route exact path="/LogIn" element={<LoginPage setUser={setUser}/>}/>
         <Route exact path="/Profile" element={<Profile user={user}/>}/>
-        <Route exact path="/" element={<Park user={user}/>}/>
+        <Route exact path="/" element={<ParksContainer user={user} parks={parks}/>}/>
       </Routes>
     </div>
   );
