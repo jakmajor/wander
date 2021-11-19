@@ -3,9 +3,7 @@ import React, { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import LoginPage from './LoginPage.js';
 import Profile from './Profile.js';
-import Park from './Park.js'
 import ParksContainer from "./ParksContainer";
-import Trail from "./Trail";
 import TrailContainer from "./TrailContainer";
 import './App.css'
 
@@ -47,7 +45,7 @@ function App() {
       <Routes>
         <Route exact path="/Profile" element={<Profile user={user} />} />
         <Route exact path="/" element={<ParksContainer user={user} parks={parks} />}/>
-        <Route exact path="/parks/:parksId" element={<TrailContainer/>}/>
+        <Route exact path="/parks/:parksId" element={<TrailContainer user={user}/>}/>
 
       </Routes>
     </div>

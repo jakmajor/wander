@@ -10,15 +10,18 @@ puts "📍🏕️ Seeding parks..."
 Park.create!([
   {
     name: "Yosemite National Park",
-    state: "California"
+    state: "California",
+    image_url: "https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=952&q=80"
   },
   {
     name: "Zion National Park",
-    state: "Utah"
+    state: "Utah",
+    image_url: "https://images.unsplash.com/photo-1628112602640-2d529ef223c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3613&q=80"
   },
   {
     name: "Joshua Tree National Park",
-    state: "California"
+    state: "California",
+    image_url: "https://images.unsplash.com/photo-1581293738298-451cd74b0b45?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=988&q=80"
   }
 ])
 
@@ -28,22 +31,72 @@ Trail.create!([
     name: "Half Dome Hike",
     distance: "15",
     difficulty: "Difficult",
-    elevation: "8,839",
+    elevation: "8839",
     type_of_hike: "Out & back",
     rating: "5",
-    lattitude: "37.7452",
-    longitude: "119.5127", 
+    lattitude: "37.745374256529466",
+    longitude: "-119.51272296001964", 
+    image_url: "https://californiathroughmylens.com/wp-content/uploads/2016/07/stargazing-glacier-point-3.jpg",
+    park_id: 1
+  },
+  {
+    name: "Vernal and Nevada Falls",
+    distance: "1.5-5.4",
+    difficulty: "Moderate",
+    elevation: "400 2000",
+    type_of_hike: "Out & back",
+    rating: "5",
+    image_url: "https://www.myyosemitepark.com/wp-content/uploads/2015/05/yt-mist-trail-vernal-fall_dollar_680.jpg?width=730",
+    lattitude: "37.727926143824924",
+    longitude: "-119.5490617564217", 
+    park_id: 1
+  },
+  {
+    name: "Lower Yosemite Falls",
+    distance: "1",
+    difficulty: "Easy",
+    elevation: "50",
+    type_of_hike: "Loop",
+    rating: "5",
+    image_url: "https://www.americansouthwest.net/california/photographs700/lower.jpg",
+    lattitude: "37.7466149856493",
+    longitude: "-119.59622714467852", 
+    park_id: 1
+  },
+  {
+    name: "Upper Yosemite Falls",
+    distance: "7.6",
+    difficulty: "Difficult",
+    elevation: "2600",
+    type_of_hike: "Out & back",
+    rating: "5",
+    image_url: "https://cdn2.apstatic.com/photos/hike/7004881_medium_1554310989.jpg",
+    lattitude: "37.73834142511535",
+    longitude: "-119.60827070557676", 
+    park_id: 1
+  },
+  {
+    name: "Inspiration Point",
+    distance: "2.6",
+    difficulty: "Moderate",
+    elevation: "1000",
+    type_of_hike: "Out & back",
+    rating: "5",
+    image_url: "https://modernhiker-storage.s3.amazonaws.com/modernhiker/wp-content/uploads/2019/07/Inspiration-and-Artists-Points-4-1030x580.jpg",
+    lattitude: "37.71672285973264",
+    longitude: "-119.67770890209971", 
     park_id: 1
   },
   {
     name: "Angel's Landing",
     distance: "5",
     difficulty: "Difficult",
-    elevation: "5,790",
+    elevation: "5790",
     type_of_hike: "Out & back",
     rating: "4",
-    lattitude: "37.272204",
-    longitude: "-112.950218",
+    lattitude: "37.25992454634612",
+    longitude: "-112.95119020679748",
+    image_url: "https://www.thewholeworldisaplayground.com/wp-content/uploads/2020/05/Angels-Landing-Hike-Zion-National-Park-21.webp",
     park_id: 2
   },
   {
@@ -53,8 +106,9 @@ Trail.create!([
     elevation: "79",
     type_of_hike: "Loop",
     rating: "4",
-    lattitude: "33.997832",
-    longitude: "-116.059800",
+    lattitude: "34.008167811563894",
+    longitude: "-116.05947428913214",
+    image_url: "https://www.nps.gov/jotr/learn/nature/images/12489691874_b5bbfaa7e3_k.jpg?maxwidth=1200&maxheight=1200&autorotate=false",
     park_id: 3
   }
 ])
