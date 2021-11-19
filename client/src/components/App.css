@@ -1,0 +1,80 @@
+* {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.gmnoprint,
+.gm-style-cc,
+#\30
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div:nth-child(15)
+  > div
+  > a
+  > div
+  > img,
+#\30 > div > div > div > div > div > div:nth-child(2) {
+  display: none !important;
+}
+
+.marker-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.marker-container:hover > .marker-info {
+  opacity: 1;
+}
+
+.marker-info {
+  position: absolute;
+  top: -250px;
+  left: 100px;
+  color: #010101;
+  opacity: 0;
+  padding: 0px;
+  border: 2px solid #010101;
+  width: 300px;
+}
+
+.marker-info-image{
+    display: block;
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.marker-info-name{
+font-size: 20px;
+text-align: left;
+}
+
+.marker-info-other{
+    font-size: 12px;
+    margin: 0px auto;
+    padding-bottom: 5px;
+}
+
+
+.marker {
+
+}
+.bg-1{
+    background-color: #75AF79;
+}
+.bg-2{
+    background-color: #EBCAD0;
+}
+.bg-3{
+    background-color: #DEA351;
+}

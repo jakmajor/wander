@@ -5,12 +5,15 @@ import LoginPage from './LoginPage.js';
 import Profile from './Profile.js';
 import Park from './Park.js'
 import ParksContainer from "./ParksContainer";
+import Trail from "./Trail";
+import TrailContainer from "./TrailContainer";
+import './App.css'
 
 function App() {
   const [user, setUser] = useState(null);
-  const [parks, setParks] = useState([]); 
-  
-  
+  const [parks, setParks] = useState([]);
+
+
   const FETCH_URL = '/parks'
 
   useEffect(() => {
@@ -23,9 +26,9 @@ function App() {
   }, []);
 
   const getParks = () => {
-    fetch(FETCH_URL) 
-    .then(r => r.json())
-    .then((json) => parksPlease(json))
+    fetch(FETCH_URL)
+      .then(r => r.json())
+      .then((json) => parksPlease(json))
   }
 
   useEffect(() => {
@@ -33,17 +36,19 @@ function App() {
   }, []);
 
   const parksPlease = (parks) => {
-    if (!!parks) {setParks(parks)}
+    if (!!parks) { setParks(parks) }
   }
 
-  if (!user) return <LoginPage setUser={setUser}/>;
+  if (!user) return <LoginPage setUser={setUser} />;
 
   return (
     <div className="App">
       <Navbar user={user} setUser={setUser} />
       <Routes>
-        <Route exact path="/Profile" element={<Profile user={user}/>}/>
-        <Route exact path="/" element={<ParksContainer user={user} parks={parks}/>}/>
+        <Route exact path="/Profile" element={<Profile user={user} />} />
+        <Route exact path="/" element={<ParksContainer user={user} parks={parks} />}/>
+        <Route exact path="/parks/:parksId" element={<TrailContainer/>}/>
+
       </Routes>
     </div>
   );
@@ -51,4 +56,4 @@ function App() {
 
 export default App;
 
-{/* <Route exact path="/LogIn" element={<LoginPage setUser={setUser}/>}/> */}
+{/* <Route exact path="/LogIn" element={<LoginPage setUser={setUser}/>}/> */ }
