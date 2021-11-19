@@ -11,17 +11,33 @@ Park.create!([
   {
     name: "Yosemite National Park",
     state: "California",
-    image_url: "https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=952&q=80"
+    image_url: "https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=952&q=80", 
+    bio: "Not just a great valley, but a shrine to human foresight, the strength of granite, the power of glaciers, the persistence of life, and the tranquility of the High Sierra.
+
+    First protected in 1864, Yosemite National Park is best known for its waterfalls, but within its nearly 1,200 square miles, you can find deep valleys, grand meadows, ancient giant sequoias, a vast wilderness area, and much more.", 
+    est: "1890", 
+    clout_factor: "", 
+    annual_visitors: ""
   },
   {
     name: "Zion National Park",
     state: "Utah",
-    image_url: "https://images.unsplash.com/photo-1628112602640-2d529ef223c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3613&q=80"
+    image_url: "https://images.unsplash.com/photo-1628112602640-2d529ef223c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3613&q=80",
+    bio: "Located in southwestern Utah, 43 miles east of St. George, Zion National Park is Utah’s oldest and most visited national park, annually hosting an average of 4.5 million visitors. The park’s main attraction is Zion Canyon, at its south end, which exhibits stunning rock monoliths and eroded canyon walls cut by the Virgin River over time.
+
+    Follow the paths where native people and pioneers walked. Gaze up at massive sandstone cliffs of cream, pink, and red that soar into a brilliant blue sky. Experience wilderness in a narrow slot canyon. Zion’s unique array of plants and animals will enchant you as you absorb the rich history of the past and enjoy the excitement of present day adventures. ", 
+    est: "1919", 
+    clout_factor: "", 
+    annual_visitors: ""
   },
   {
     name: "Joshua Tree National Park",
     state: "California",
-    image_url: "https://images.unsplash.com/photo-1581293738298-451cd74b0b45?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=988&q=80"
+    image_url: "https://images.unsplash.com/photo-1581293738298-451cd74b0b45?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=988&q=80",
+    bio: "Joshua Tree National Park is a vast protected area in southern California. It's characterized by rugged rock formations and stark desert landscapes. Named for the region’s twisted, bristled Joshua trees, the park straddles the cactus-dotted Colorado Desert and the Mojave Desert, which is higher and cooler. Keys View looks out over the Coachella Valley. Hiking trails weave through the boulders of Hidden Valley.", 
+    est: "1994", 
+    clout_factor: "", 
+    annual_visitors: ""
   }
 ])
 
