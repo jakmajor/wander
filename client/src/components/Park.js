@@ -12,7 +12,6 @@ function Park({ park, user }) {
     // const handleButtonClick = (e) => {
     //     return showParks ? setShowParks(!showParks) : setShowParks(!showParks)
     // }
-    console.log(park.trails)
     return (
 
         <div>

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Map from './Map.js'
 import { useParams } from 'react-router-dom';
 
-export default function TrailContainer({}) {
+export default function TrailContainer({ user }) {
   const [trails, setTrails] = useState([]);
   const {parksId} = useParams()
 
@@ -19,7 +19,7 @@ export default function TrailContainer({}) {
 
   return (
   <div>
-    <Map trails={trails}/>
+    <Map user={user} trails={trails}/>
   </div>
   )
 }
