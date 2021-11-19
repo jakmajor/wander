@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import Trail from './Trail.js';
+import { useHistory, useParams } from 'react-router-dom';
 
 function Park({ park, user }) {
     const [showParks, setShowParks] = useState(false);
+
+    let params = useParams();
+    
 
 
     // const handleButtonClick = (e) => {
@@ -12,6 +16,7 @@ function Park({ park, user }) {
     return (
 
         <div>
+            {params.parkId}
             <button onClick={() => setShowParks(!showParks)}>
                 <h2>{park.name}</h2>
                 <p>{park.state}</p>

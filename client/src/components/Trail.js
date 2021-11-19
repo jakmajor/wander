@@ -1,7 +1,8 @@
 import React from "react";
+import { useHistory, useParams } from 'react-router-dom';
 import Map from "./Map";
 
-function Trail({ trail, user }) {
+function Trail({ trail, user, parks }) {
 
     const handleLikeClick = () => {
         console.log(trail) 
