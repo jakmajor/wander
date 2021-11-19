@@ -35,8 +35,20 @@ body {
     background-color: #F3EBEA;
 }
 
+.logo{
+    font-size: 20px;
+}
+
+.row-border{
+    border-bottom: 1px solid #010101;
+}
+
 .outside-border{
     border: 1px solid #010101;
+}
+
+.links{
+    text-align: right;
 }
 
 

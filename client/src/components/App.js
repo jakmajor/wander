@@ -43,7 +43,11 @@ function App() {
 
 
     <div className="App">
+      <div className="row row-border">
+        <div className="col-lg-12">
       <Navbar user={user} setUser={setUser} />
+      </div>
+      </div>
       <Routes>
         <Route exact path="/Profile" element={<Profile user={user} />} />
         <Route exact path="/" element={<ParksContainer user={user} parks={parks} />}/>

@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom'
+import image from '../images/profileimg.png';
 
 function Navbar({user, setUser}) {
 
@@ -11,14 +12,17 @@ function Navbar({user, setUser}) {
     }
 
     return(
-        <div className="navbar">
+        <div className="navbar"> 
+            <p className="logo">Wander</p>
+            <div className="links">
             <NavLink className="nav-link" to="/">Home</NavLink>
-            <NavLink className="nav-link" to="/Profile">Profile</NavLink>
+            <NavLink className="nav-link" to="/Profile"><img src={image}></img></NavLink>
             <button className="nav-link" onClick={handleLogoutClick}>Sign Out</button>
+            </div>
         </div>
     )
 
     
 }
 
-export default Navbar;
+export default Navbar;  
