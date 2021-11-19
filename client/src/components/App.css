@@ -131,3 +131,40 @@ text-align: left;
     background-color: #DEA351;
 }
 
+.login-box {
+  padding: 50px 275px;
+}
+.login-box-switch {
+  padding: 0px 275px;
+}
+
+.login-text {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.login-input-wrapper {
+  position: relative;
+}
+
+.login-button {
+  border: 1px solid #010101;
+  background-color: #ceeadd;
+  top: 0px;
+  right: 0px;
+  padding: 15px;
+  margin-top: 0;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background: #010101;
+  color: #F3EBEA;
+
+}
+
+.login-text-field{
+  padding: 5px;
+}
+

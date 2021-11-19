@@ -27,21 +27,25 @@ function LoginForm({ setUser = () => console.log('') }) {
   }
 
   return (
-    <form onSubmit={(e) => handleSubmit(e)}>
-      <div>
-        <label htmlFor="username">Username</label>
+    <form onSubmit={(e) => handleSubmit(e)} className="login-box">
+      <div className="login-text-field">
+        <label htmlFor="username"></label>
         <input
+          className="login-text"
           type="text"
+          placeholder="Username"
           id="username"
           autoComplete="off"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
         />
       </div>
-      <div>
-        <label htmlFor="password">Password</label>
+      <div className="login-text-field">
+        <label htmlFor="password"></label>
         <input
+          className="login-text"
           type="password"
+          placeholder="Password"
           id="password"
           autoComplete="current-password"
           value={password}
@@ -49,7 +53,7 @@ function LoginForm({ setUser = () => console.log('') }) {
         />
       </div>
       <div>
-        <button variant="fill" color="primary" type="submit">
+        <button className="login-button" type="submit">
           {isLoading ? "Loading..." : "Login"}
         </button>
       </div>

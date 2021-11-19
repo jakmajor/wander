@@ -39,11 +39,14 @@ function SignUpForm({ setUser = () => console.log('') }) {
   }
 
   return (
-    <form onSubmit={(e) => handleSubmit(e)}>
-        <div>
+    <form onSubmit={(e) => handleSubmit(e)} className="login-box">
+        <div className="login-text-field">
           
-          <label htmlFor="name">Name</label>
+          <label htmlFor="name" ></label>
           <input
+            style={{backgroundColor: "#F3EBEA"}}
+            className="login-text"
+            placeholder="Name"
             type="text"
             id="name"
             autoComplete="off"
@@ -51,10 +54,13 @@ function SignUpForm({ setUser = () => console.log('') }) {
             onChange={(e) => setName(e.target.value)}
           />
         </div>
-      <div>
+      <div className="login-text-field">
           
-        <label htmlFor="username">Username</label>
+        <label htmlFor="username" ></label>
         <input
+          style={{backgroundColor: "#F3EBEA"}}
+          className="login-text"
+          placeholder="Username"
           type="text"
           id="username"
           autoComplete="off"
@@ -62,9 +68,12 @@ function SignUpForm({ setUser = () => console.log('') }) {
           onChange={(e) => setUsername(e.target.value)}
         />
       </div>
-      <div>
-        <label htmlFor="password">Password</label>
+      <div className="login-text-field">
+        <label htmlFor="password" ></label>
         <input
+          style={{backgroundColor: "#F3EBEA"}}
+          className="login-text"
+          placeholder="Password"
           type="password"
           id="password"
           value={password}
@@ -72,9 +81,12 @@ function SignUpForm({ setUser = () => console.log('') }) {
           autoComplete="current-password"
         />
       </div>
-      <div>
-        <label htmlFor="password">Password Confirmation</label>
+      <div className="login-text-field">
+        <label htmlFor="password" ></label>
         <input
+          style={{backgroundColor: "#F3EBEA"}}
+          className="login-text"
+          placeholder="Password Confirmation"
           type="password"
           id="password_confirmation"
           value={passwordConfirmation}
@@ -82,18 +94,24 @@ function SignUpForm({ setUser = () => console.log('') }) {
           autoComplete="current-password"
         />
       </div>
-      <div>
-        <label htmlFor="imageUrl">Profile Image</label>
+      <div className="login-text-field">
+        <label htmlFor="imageUrl" ></label>
         <input
+          style={{backgroundColor: "#F3EBEA"}}
+          className="login-text"
+          placeholder="Profile Image"
           type="text"
           id="imageUrl"
           value={imageUrl}
           onChange={(e) => setImageUrl(e.target.value)}
         />
       </div>
-      <div>
-        <label htmlFor="bio">Bio</label>
+      <div className="login-text-field">
+        <label htmlFor="bio" ></label>
         <textarea
+          style={{backgroundColor: "#F3EBEA"}}
+          className="login-text"
+          placeholder="Bio"
           rows="3"
           id="bio"
           value={bio}
@@ -101,7 +119,7 @@ function SignUpForm({ setUser = () => console.log('') }) {
         />
       </div>
       <div>
-        <button type="submit">{isLoading ? "Loading..." : "Sign Up"}</button>
+        <button type="submit" className="login-button">{isLoading ? "Loading..." : "Sign Up"}</button>
       </div>
       <div>
         {/* {errors.map((err) => (
