@@ -42,6 +42,8 @@ function App() {
   if (!user) return <LoginPage setUser={setUser} />;
 
   return (
+
+
     <div className="App">
       <Navbar user={user} setUser={setUser} />
       <Routes>

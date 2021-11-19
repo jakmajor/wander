@@ -24,6 +24,46 @@
   display: none !important;
 }
 
+* {
+    font-family: 'Sharp Grotesk Medium 20';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+}
+
+body {
+    background-color: #F3EBEA;
+}
+
+.outside-border{
+    border: 1px solid #010101;
+}
+
+
+
+.park-name{
+    font-size: 43px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    margin-right: 10px;
+    text-align: left;
+    padding-right: 50px;
+}
+
+a { 
+    text-decoration: none;
+    color: #010101;
+}
+
+.info-text{
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+.image{
+    border-right: 1px solid #010101;
+}
+
 .marker-container {
   position: relative;
   cursor: pointer;
