@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_19_213400) do
+ActiveRecord::Schema.define(version: 2021_11_19_194012) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -40,10 +40,10 @@ ActiveRecord::Schema.define(version: 2021_11_19_213400) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "image_url"
+    t.text "bio"
+    t.integer "est"
     t.integer "annual_visitors"
     t.integer "clout_factor"
-    t.string "bio"
-    t.integer "est"
   end
 
   create_table "trails", force: :cascade do |t|

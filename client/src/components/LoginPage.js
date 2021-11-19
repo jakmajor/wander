@@ -7,7 +7,7 @@ function LoginPage({ setUser }) {
     const [showLogin, setShowLogin] = useState(true);
 
    return(
-        <div className="login-box">
+        <div >
           
       {showLogin ? (
         <>
@@ -15,7 +15,7 @@ function LoginPage({ setUser }) {
          
           <p className="login-box-switch">
             Don't have an account? &nbsp;
-            <button className="login-button" onClick={() => setShowLogin(false)}>
+            <button className="login-button-switch" onClick={() => setShowLogin(false)}>
               Sign Up
             </button>
           </p>
@@ -26,7 +26,7 @@ function LoginPage({ setUser }) {
           
           <p className="login-box-switch">
             Already have an account? &nbsp;
-            <button className="login-button" onClick={() => setShowLogin(true)}>
+            <button className="login-button-switch" onClick={() => setShowLogin(true)}>
               Log In
             </button>
           </p>
