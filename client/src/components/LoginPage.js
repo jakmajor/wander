@@ -7,15 +7,15 @@ function LoginPage({ setUser }) {
     const [showLogin, setShowLogin] = useState(true);
 
    return(
-        <div>
+        <div className="login-box">
           
       {showLogin ? (
         <>
           <LoginForm setUser={setUser} />
          
-          <p>
+          <p className="login-box-switch">
             Don't have an account? &nbsp;
-            <button color="secondary" onClick={() => setShowLogin(false)}>
+            <button className="login-button" onClick={() => setShowLogin(false)}>
               Sign Up
             </button>
           </p>
@@ -24,9 +24,9 @@ function LoginPage({ setUser }) {
         <>
           <SignUpForm setUser={setUser} />
           
-          <p>
+          <p className="login-box-switch">
             Already have an account? &nbsp;
-            <button color="secondary" onClick={() => setShowLogin(true)}>
+            <button className="login-button" onClick={() => setShowLogin(true)}>
               Log In
             </button>
           </p>
