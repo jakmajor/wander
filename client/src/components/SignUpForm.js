@@ -131,3 +131,4 @@ function SignUpForm({ setUser = () => console.log('') }) {
 }
 
 export default SignUpForm;
+

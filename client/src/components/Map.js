@@ -50,7 +50,7 @@ function Map({ trails = [{ lat: 0, long: 0 }], user }) {
 
     return (
         <> {trails.length > 0 &&
-            <div className="google-map" style={{ height: '700px', width: '1000px', borderRadius: '8px' }}>
+            <div className="google-map" style={{ height: '700px', width: '1000px', borderRadius: '8px'}}>
                 <GoogleMapReact
                     bootstrapURLKeys={{ key: 'AIzaSyDhTkgFD1XkuNMQmVAD6b5AmGYZv9K4nN0' }}
                     defaultCenter={{

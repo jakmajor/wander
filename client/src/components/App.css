@@ -24,6 +24,12 @@
   display: none !important;
 }
 
+.google-map {
+  margin: auto;
+  width: 50%;
+  border: solid 1px black;
+}
+
 * {
     font-family: 'Sharp Grotesk Medium 20';
     font-weight: 500;
