@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 
 export default function TrailContainer({ user }) {
   const [trails, setTrails] = useState([]);
-  const {parksId} = useParams()
+  const { parksId } = useParams()
 
   useEffect(() => {
     getPark()
@@ -18,8 +18,12 @@ export default function TrailContainer({ user }) {
 
 
   return (
-  <div>
-    <Map user={user} trails={trails}/>
-  </div>
+    <div className="container">
+      <div className="row">
+        <div className="col">
+          <Map user={user} trails={trails} />
+        </div>
+      </div>
+    </div>
   )
 }

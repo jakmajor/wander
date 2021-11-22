@@ -5,15 +5,22 @@ class HikerTrailsController < ApplicationController
         deleteTrail.destroy
     end
 
-    def create 
-        newTrail = HikerTrail.create!(newTrail_params)
-        render json: newTrail 
+    def create
+        trail = HikerTrail.find_by(newTrail_params)
+        if trail.present?
+            trail.destroy
+            render status: :ok
+        else
+            newTrail = HikerTrail.create!(newTrail_params)
+            render json: newTrail 
+        end
+        
     end
 
     private 
 
     def newTrail_params 
-        params.permit(:trail_id, :hiker_id)
+        params.require(:hiker_trail).permit(:trail_id, :hiker_id)
     end
 
 end
