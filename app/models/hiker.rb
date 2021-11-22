@@ -4,4 +4,5 @@ class Hiker < ApplicationRecord
     has_secure_password
 
     validates :name, presence: true 
+    validates :username, uniqueness: true
 end
