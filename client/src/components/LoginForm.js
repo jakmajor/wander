@@ -53,7 +53,7 @@ function LoginForm({ setUser = () => console.log('') }) {
         />
       </div>
       <div>
-        <button className="login-button" type="submit">
+        <button className="signout-button margin-center" type="submit">
           {isLoading ? "Loading..." : "Login"}
         </button>
       </div>

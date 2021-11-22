@@ -44,7 +44,6 @@ function SignUpForm({ setUser = () => console.log('') }) {
           
           <label htmlFor="name" ></label>
           <input
-            style={{backgroundColor: "#F3EBEA"}}
             className="login-text"
             placeholder="Name"
             type="text"
@@ -58,7 +57,6 @@ function SignUpForm({ setUser = () => console.log('') }) {
           
         <label htmlFor="username" ></label>
         <input
-          style={{backgroundColor: "#F3EBEA"}}
           className="login-text"
           placeholder="Username"
           type="text"
@@ -71,7 +69,6 @@ function SignUpForm({ setUser = () => console.log('') }) {
       <div className="login-text-field">
         <label htmlFor="password" ></label>
         <input
-          style={{backgroundColor: "#F3EBEA"}}
           className="login-text"
           placeholder="Password"
           type="password"
@@ -84,7 +81,6 @@ function SignUpForm({ setUser = () => console.log('') }) {
       <div className="login-text-field">
         <label htmlFor="password" ></label>
         <input
-          style={{backgroundColor: "#F3EBEA"}}
           className="login-text"
           placeholder="Password Confirmation"
           type="password"
@@ -97,7 +93,6 @@ function SignUpForm({ setUser = () => console.log('') }) {
       <div className="login-text-field">
         <label htmlFor="imageUrl" ></label>
         <input
-          style={{backgroundColor: "#F3EBEA"}}
           className="login-text"
           placeholder="Profile Image"
           type="text"
@@ -109,7 +104,6 @@ function SignUpForm({ setUser = () => console.log('') }) {
       <div className="login-text-field">
         <label htmlFor="bio" ></label>
         <textarea
-          style={{backgroundColor: "#F3EBEA"}}
           className="login-text"
           placeholder="Bio"
           rows="3"
@@ -119,7 +113,7 @@ function SignUpForm({ setUser = () => console.log('') }) {
         />
       </div>
       <div>
-        <button type="submit" className="login-button">{isLoading ? "Loading..." : "Sign Up"}</button>
+        <button type="submit" className="signout-button margin-center">{isLoading ? "Loading..." : "Sign Up"}</button>
       </div>
       <div>
         {/* {errors.map((err) => (

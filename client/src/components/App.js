@@ -45,7 +45,7 @@ function App() {
     <div className="App">
       <Navbar user={user} setUser={setUser} />
       <Routes>
-        <Route exact path="/Profile" element={<Profile user={user} />} />
+        <Route exact path="/Profile" element={<Profile user={user} setUser={setUser} />} />
         <Route exact path="/" element={<ParksContainer user={user} parks={parks} />} />
         <Route exact path="/parks/:parksId" element={<TrailContainer user={user} />} />
 

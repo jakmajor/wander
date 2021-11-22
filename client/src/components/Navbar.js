@@ -1,27 +1,23 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import image from '../images/profileimg.png';
 
-function Navbar({ user, setUser }) {
-
-    const handleLogoutClick = () => {
-        fetch("/logout", { method: "DELETE" }).then((r) => {
-            if (r.ok) {
-                setUser(null);
-            }
-        });
-    }
+function Navbar({ showAvatar = true }) {
 
     return (
-        <div className="container header-container">
-            <div className="row">
-                <div className="col">
-                    <div className="navbar">
-                        <p className="logo">Wander</p>
-                        <div className="links">
-                            <NavLink className="nav-link" to="/">Home</NavLink>
-                            <NavLink className="nav-link" to="/Profile"><img src={image}></img></NavLink>
-                            <button className="nav-link" onClick={handleLogoutClick}>Sign Out</button>
-                        </div>
+        <div className="navbar">
+            <div className="container header-container">
+                <div className="row">
+                    <div className="col my-auto">
+                        <Link to="/">
+                            <p className="logo">Wander</p>
+                        </Link>
+                    </div>
+                    <div className="col float-right">
+                        {showAvatar &&
+                            <div className="links">
+                                <NavLink className="nav-link" to="/Profile"><img src={image}></img></NavLink>
+                            </div>
+                        }
                     </div>
                 </div>
             </div>

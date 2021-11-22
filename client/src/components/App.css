@@ -25,60 +25,102 @@
 }
 
 * {
-    font-family: 'Sharp Grotesk Medium 20';
-    font-weight: 500;
-    font-style: normal;
-    font-size: 12px;
+  font-family: "Sharp Grotesk Medium 20";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12px;
 }
 
 body {
-    background-color: #F3EBEA;
-}
-.header-container{
-    margin-bottom: 20px;
-    border-bottom: 2px solid #010101;
-    padding-bottom: 20px;
+  background-color: #f3ebea;
 }
 
-.logo{
-    font-size: 20px;
+.text-center {
+  text-align: center;
+  margin-top: 10px;
 }
 
-.row-border{
-    border-bottom: 1px solid #010101;
+.header-container {
+  border-bottom: 2px solid #010101;
+  padding-bottom: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 20px;
+  margin-bottom: 30px;
 }
 
-.outside-border{
-    border: 1px solid #010101;
+.logo {
+  font-size: 43px;
+  margin: 0px;
 }
 
-.links{
-    text-align: right;
+.float-right {
+  float: right;
 }
 
-
-
-.park-name{
-    font-size: 43px;
-    margin-bottom: 0px;
-    margin-top: 10px;
-    margin-right: 10px;
-    text-align: left;
-    padding-right: 50px;
+.row-border {
+  border-bottom: 1px solid #010101;
 }
 
-a { 
-    text-decoration: none;
-    color: #010101;
+.outside-border {
+  border: 1px solid #010101;
 }
 
-.info-text{
-    font-size: 12px;
-    padding-top: 10px;
+.links {
+  text-align: right;
 }
 
-.image{
-    border-right: 1px solid #010101;
+.park-name {
+  font-size: 43px;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  margin-right: 10px;
+  text-align: left;
+  padding-right: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: #010101;
+}
+
+.info-text {
+  padding-top: 10px;
+  font-family: Karla;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.image {
+  border-right: 1px solid #010101;
+}
+
+.profile-image {
+  border-radius: 1000px;
+  border: 2px solid #010101;
+  height: 210px;
+  width: 210px;
+  display: block;
+  margin: 0px auto;
+}
+
+.profile-name {
+  font-family: Sharp Grotesk;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 23px;
+  margin-top: 40px;
+}
+
+.profile-bio {
+  font-family: Karla;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 15px;
 }
 
 .marker-container {
@@ -101,72 +143,71 @@ a {
   width: 300px;
 }
 
-.marker-info-image{
-    display: block;
-    width: 100%;
-    height: 300px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.marker-info-image {
+  display: block;
+  width: 100%;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-
-.marker-info-name{
-font-size: 20px;
-text-align: left;
+.marker-info-name {
+  font-size: 20px;
+  text-align: left;
 }
 
-.marker-info-other{
-    font-size: 12px;
-    margin: 0px auto;
-    padding-bottom: 5px;
+.marker-info-other {
+  font-size: 12px;
+  margin: 0px auto;
+  padding-bottom: 5px;
 }
-
 
 .marker {
-
 }
-.bg-1{
-    background-color: #75AF79;
+.bg-1 {
+  background-color: #75af79;
 }
-.bg-2{
-    background-color: #EBCAD0;
+.bg-2 {
+  background-color: #ebcad0;
 }
-.bg-3{
-    background-color: #DEA351;
+.bg-3 {
+  background-color: #dea351;
 }
 
 .login-box {
-  padding: 50px 250px;
+  margin-top: 50px;
 }
 
 .login-box-switch {
-  padding: 0px 300px;
 }
 
 .login-text {
   border: 1px solid #010101;
   margin-bottom: 10px;
-  font-size: 20px;
   height: 50px;
-  width: 300px;
-  background-color: #F3EBEA;
+  width: 100%;
+  background-color: #f3ebea;
+  padding: 20px;
+  border-radius: 2px;
+  font-family: Karla;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 15px;
+}
+
+.login-text::placeholder {
+  font-family: Karla;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 15px;
+  color: #525252;
 }
 
 .login-input-wrapper {
   position: relative;
-}
-
-.login-button {
-  border: 1px solid #010101;
-  background-color: #ceeadd;
-  top: 0px;
-  right: 0px;
-  padding: 15px;
-  margin-top: 0;
-  margin-left: 90px;
-  font-size: 15px;
-  cursor: pointer;
 }
 
 .login-button-switch {
@@ -179,17 +220,31 @@ text-align: left;
 
 .login-button:hover {
   background: #010101;
-  color: #F3EBEA;
-
+  color: #f3ebea;
 }
 
 .login-button-switch:hover {
   background: #010101;
-  color: #F3EBEA;
-
+  color: #f3ebea;
 }
 
-.login-text-field{
+.login-text-field {
   padding: 5px;
 }
 
+.signout-button {
+  border: 1px solid #010101;
+  background-color: #010101;
+  color: white;
+  margin-top: 20px !important;
+  top: 0px;
+  right: 0px;
+  padding: 15px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.margin-center {
+  margin: 0px auto;
+  display: block;
+}
