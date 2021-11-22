@@ -105,15 +105,54 @@ Trail.create!([
   },
   {
     name: "Angel's Landing",
-    distance: "5",
+    distance: 5,
     difficulty: "Difficult",
-    elevation: "5790",
+    elevation: 5790,
     type_of_hike: "Out & back",
     rating: "4",
     lattitude: "37.25992454634612",
     longitude: "-112.95119020679748",
     image_url: "https://www.thewholeworldisaplayground.com/wp-content/uploads/2020/05/Angels-Landing-Hike-Zion-National-Park-21.webp",
     park_id: 2
+  },
+  {
+    name: "The Narrows (bottom up)",
+    distance: 9.4,
+    difficulty: "Difficult",
+    elevation: 334,
+    type_of_hike: "Out & back",
+    rating: 5,
+    image_url: "https://bearfoottheory.com/wp-content/uploads/2019/02/Zion-Narrows-Best-Hikes-in-Utah.jpeg",
+    lattitude: "37.30521174882055",
+    longitude: "-112.94916549969155",
+    park_id: 2
+
+  },
+  {
+    name: "Grotto Trail",
+    distance: 1,
+    difficulty: "Easy",
+    elevation: 35,
+    type_of_hike: "Out & back",
+    rating: 5,
+    image_url: "https://www.citrusmilo.com/zion2015/joebraun_grottotrail05.jpg",
+    lattitude: "37.25892648698974",
+    longitude: "-112.9513321283305",
+    park_id: 2
+
+  },
+  {
+    name: "Watchman trail",
+    distance: 3.3,
+    difficulty: "Moderate",
+    elevation: 368,
+    type_of_hike: "Out & back",
+    rating: "5",
+    image_url: "https://media.deseretdigital.com/file/9cd56a2574?crop%3Dtop%3A0%7Cleft%3A0%7Cwidth%3A620%7Cheight%3A330%7Cgravity%3ACenter%26quality%3D55%26interlace%3Dnone%26resize%3Dwidth%3A620%26order%3Dresize%2Ccrop%26c%3D14%26a%3D0fab10fb",
+    lattitude: "37.20153972996445",
+    longitude: "-112.97909633308277", 
+    park_id: 2
+
   },
   {
     name: "Skull Rock Discovery Trail",
